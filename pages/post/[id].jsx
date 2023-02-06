@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { ParsedUrlQuery } from "querystring";
 import { GetPost, GetPosts } from "../../lib/postdata_api";
 
 export const getStaticPaths = async () => {

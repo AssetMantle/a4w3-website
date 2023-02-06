@@ -18,7 +18,13 @@
     "export": "next export",
     "prestart": "npm run export",
     "start": "serve out",
-    "lint": "next lint"
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "next lint --dir .",
+    "lint": "next lint --fix --dir .",
+    "prepare": "husky install",
+    "format": "prettier --write .",
+    "pre-commit": "yarn lint && yarn format && git add -A ."
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -33,11 +39,13 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "typescript": "^4.7.4",
     "eslint": "8.27.0",
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.7.4"
   }
 }

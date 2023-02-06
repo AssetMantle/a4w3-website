@@ -1,28 +1,27 @@
 {
-    "extends": ["next/core-web-vitals", "prettier"],
-    "plugins": ["prettier", "unused-imports"],
-    "rules": {
-      "prettier/prettier": "warn",
-      "no-console": "warn",
-      "no-unused-vars": "off",
-      "no-undef": "warn",
-      "no-img-element": "off",
-      "react/no-unknown-property": [
-        "error",
-        {
-          "ignore": ["layout"]
-        }
-      ], // for conversion of <Image/> to <img/>
-      "unused-imports/no-unused-imports": "error",
-      "unused-imports/no-unused-vars": [
-        "warn",
-        {
-          "vars": "all",
-          "varsIgnorePattern": "^_",
-          "args": "after-used",
-          "argsIgnorePattern": "^_"
-        }
-      ]
-    }
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["prettier", "unused-imports"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-console": "warn",
+    "no-unused-vars": "off",
+    "no-undef": "warn",
+    "no-img-element": "off",
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": ["layout"]
+      }
+    ], // for conversion of <Image/> to <img/>
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
   }
-  
+}
