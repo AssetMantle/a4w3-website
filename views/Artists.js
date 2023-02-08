@@ -44,9 +44,8 @@ export default function Artists() {
         className="body1 text-center mx-auto my-3"
         style={{ maxWidth: "880px" }}
       >
-        AssetMantle suite of products creates a distributed NFT Economy where
-        users can create not only NFT collections but their own NFT marketplaces
-        and storefronts.
+        Glimpse through the vivid, soulful stories of artists across this
+        community, their triumphs and travails
       </p>
       <div className="pt-4">
         <Splide
