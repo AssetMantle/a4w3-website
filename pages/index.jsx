@@ -1,38 +1,21 @@
-import Head from "next/head";
-import Link from "next/link";
-import Post from "../components/post";
-import { GetPosts } from "../lib/postdata_api";
+import Hero from "../views/Hero";
+import About from "../views/About";
+import Artists from "../views/Artists";
+import VisionMission from "../views/VisionMission";
+import Gallery from "../views/Gallery";
+import Events from "../views/Events";
+import GetInTouch from "../views/GetInTouch";
 
-export const getStaticProps = async (_context) => {
-  // fetch list of posts
-  const posts = await GetPosts();
-  return {
-    props: {
-      postDataList: posts,
-    },
-  };
-};
-
-const IndexPage = ({ postDataList }) => {
+const IndexPage = () => {
   return (
     <main>
-      <Head>
-        <title>Home page</title>
-      </Head>
-
-      <Link href={"/custom"}>
-        <a>
-          <h1>Custom Page</h1>
-        </a>
-      </Link>
-
-      <h1>List of posts</h1>
-
-      <section>
-        {postDataList.map((post) => (
-          <Post {...post} key={post.id} />
-        ))}
-      </section>
+      <Hero />
+      <About />
+      <Artists />
+      <VisionMission />
+      <Gallery />
+      <Events />
+      <GetInTouch />
     </main>
   );
 };
