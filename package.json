@@ -24,14 +24,16 @@
     "lint": "next lint --fix --dir .",
     "prepare": "husky install",
     "format": "prettier --write .",
-    "pre-commit": "yarn lint && yarn format && git add -A ."
+    "pre-commit": "yarn lint && yarn format"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
     "bootstrap": "^5.2.3",
     "next": "12.3.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "sass": "^1.58.0",
     "serve": "^14.0.1"
   },
