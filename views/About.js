@@ -4,8 +4,8 @@ import { Col, Row } from "react-bootstrap";
 export default function About() {
   return (
     <section className="container-xl py-6 my-5 px-3">
-      <Row>
-        <Col sm={7} className="my-2">
+      <Row gap={4}>
+        <Col sm={7} className="d-flex flex-column justify-content-center px-4">
           <div className="position-relative w-100 rounded-4">
             <img
               className="rounded-4"
@@ -15,15 +15,15 @@ export default function About() {
             />
           </div>
         </Col>
-        <Col sm={5} className="my-2">
-          <h1 className="text-uppercase h1 pb-4">about A4W3</h1>
-          <p className="body1 pb-3">
+        <Col sm={5} className="d-flex flex-column justify-content-center px-4">
+          <h1 className="text-uppercase h1 pb-4">About Us</h1>
+          <p className="body2 pb-3">
             Art is something we do, a verb. Art is an expression of our
             thoughts, emotions, intuitions, and desires, but it is even more
             personal than that: it is about sharing the way we experience the
             world, which for many is an extension of the personality.
           </p>
-          <p className="body1">
+          <p className="body2">
             Artist4Web3 is an ambitious attempt to create an intercity coterie
             of artists and creators. Although young, it is mushrooming
             organically with a vision to manifest the competence of art and
