@@ -1,7 +1,13 @@
+import { Container } from "react-bootstrap";
+import Footer from "../views/Footer";
+
 export default function Layout({ children }) {
   return (
     <>
-      <main>{children}</main>
+      <Container fluid className="p-0">
+        {children}
+      </Container>
+      <Footer />
     </>
   );
 }
