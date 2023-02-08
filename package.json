@@ -24,7 +24,7 @@
     "lint": "next lint --fix --dir .",
     "prepare": "husky install",
     "format": "prettier --write .",
-    "pre-commit": "yarn lint && yarn format"
+    "pre-commit": "yarn lint && yarn format && git add -A ."
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
