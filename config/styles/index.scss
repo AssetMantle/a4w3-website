@@ -56,6 +56,12 @@ $modal-content-bg: $gray-400;
 $text-muted: $white-400;
 @import "bootstrap/scss/bootstrap";
 
+@font-face {
+  font-family: Eina01-SemiBold;
+  src: url("/font/Eina01-SemiBold.ttf");
+}
+
+$title: Eina01-SemiBold;
 $fontPrimary: "Work Sans", sans-serif;
 $fontSecondary: "Lato", sans-serif;
 
@@ -84,12 +90,24 @@ body {
   margin-bottom: 128px;
 }
 .py-6 {
-  padding-top: 68px;
-  padding-top: 68px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.am_app_container {
-  overflow: hidden;
-  height: 100dvh;
+.pt-6 {
+  padding-top: 80px;
+}
+.pb-6 {
+  padding-bottom: 80px;
+}
+.pt-sm-6 {
+  @media (min-width: 576px) {
+    padding-top: 80px !important;
+  }
+}
+.pb-sm-6 {
+  @media (min-width: 576px) {
+    padding-bottom: 80px !important;
+  }
 }
 // text sizes
 @mixin fontRoot($weight, $size, $fontFamily: $fontPrimary) {
@@ -109,13 +127,15 @@ body {
 }
 
 .h1 {
-  @include fontRoot(500, 2.25rem);
+  @include fontRoot(500, 2.25rem, $title);
+  letter-spacing: 0.2em;
+  line-height: 150%;
 }
 .h2 {
-  @include fontRoot(500, 1.75rem);
+  @include fontRoot(500, 1.75rem, $title);
 }
 .h3 {
-  @include fontRoot(500, 1.25rem);
+  @include fontRoot(500, 1.25rem, $title);
 }
 // .h4 {
 //   @include fontRoot(700, 1.8rem);
@@ -174,6 +194,7 @@ a:hover {
   background-color: $bg;
   border-color: $primary-main;
   color: $color;
+  text-decoration: none;
   &:hover {
     color: $color !important;
     background-color: $bg !important;
@@ -188,11 +209,12 @@ a:hover {
   }
 }
 @mixin LinkRoot {
-  @include fontRoot(600, 0.875rem, $fontSecondary);
+  @include fontRoot(600, 1rem, $fontSecondary);
   text-align: center;
   text-transform: capitalize;
   font-feature-settings: "liga" off;
   color: $primary-main;
+  text-decoration: none;
   &:hover {
     color: $primary-main !important;
   }
@@ -302,6 +324,9 @@ a:hover {
 }
 .bg-yellow-100 {
   background-color: $yellow-100;
+}
+.bg-yellow-800 {
+  background-color: $yellow-800;
 }
 .bg-yellow-100-hover {
   &:hover {
@@ -662,5 +687,39 @@ tbody {
     &:not(:last-child) {
       border-right: 2px solid $gray-100;
     }
+  }
+}
+
+.aw-am-hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  aspect-ratio: 16/10;
+  background-image: url("/hero/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    aspect-ratio: 1/1;
+  }
+  @media (max-width: 576px) {
+    aspect-ratio: 4/7;
+  }
+}
+
+.splide__arrow {
+  background-color: transparent !important;
+  &:focus {
+    outline: none !important;
+  }
+  &.splide__arrow--next {
+    right: -1em;
+  }
+  &.splide__arrow--prev {
+    left: -1em;
+    transform: scaleX(-1) translateY(-48%) !important;
+  }
+  & > svg {
+    transform: scale(1.5) !important;
+    fill: $primary !important;
   }
 }
