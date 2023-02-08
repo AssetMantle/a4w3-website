@@ -14,7 +14,7 @@ export default function VisionMission() {
   ];
   return (
     <section className="container-xl py-5 my-5 px-3">
-      <h1 className="text-uppercase text-center">Vision & Mission</h1>
+      <h1 className="h1 text-uppercase text-center">Vision & Mission</h1>
       <p
         className="text-center subtitle2 mx-auto pt-2"
         style={{ maxWidth: "450px" }}
