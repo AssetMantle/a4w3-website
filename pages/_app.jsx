@@ -9,7 +9,7 @@ function AppSite({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="A template for Landing Site" />
-        <title>Landing Site</title>
+        <title>Airtists4web3</title>
         {/* PWA primary color */}
         <meta name="theme-color" content="#111111" />
         {/* open graphs start */}
