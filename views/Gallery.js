@@ -5,15 +5,15 @@ import "@splidejs/react-splide/css";
 export default function Gallery() {
   const Images = [
     {
-      src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      src: "/gallery/gallery1.png",
       alt: "1",
     },
     {
-      src: "https://images.unsplash.com/photo-1520881363902-a0ff4e722963?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      src: "/gallery/gallery2.png",
       alt: "2",
     },
     {
-      src: "https://images.unsplash.com/photo-1517456793572-1d8efd6dc135?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      src: "/gallery/gallery3.png",
       alt: "3",
     },
   ];
@@ -27,11 +27,13 @@ export default function Gallery() {
         <Splide
           options={{
             type: "loop",
-            padding: "20%",
+            padding: "21%",
             width: "100%",
             arrows: false,
             pagination: false,
             autoplay: true,
+            pauseOnHover: false,
+            speed: 800,
           }}
         >
           {React.Children.toArray(
