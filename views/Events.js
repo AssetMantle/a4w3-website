@@ -24,7 +24,7 @@ export default function Events() {
   ];
   return (
     <section className="container-xl py-5 my-5 px-3">
-      <h1 className="text-uppercase text-center">Events</h1>
+      <h1 className="h1 text-uppercase text-center">Events</h1>
       <div className="d-flex flex-column align-items-center justify-content-center gap-3 mt-5 pt-5">
         {React.Children.toArray(EVENTS.map((event) => <Event data={event} />))}
       </div>

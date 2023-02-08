@@ -22,7 +22,7 @@ export default function GetInTouch() {
   ];
   return (
     <section className="container-xl py-5 my-5 px-3">
-      <h1 className="text-uppercase text-center">Get in touch</h1>
+      <h1 className="h1 text-uppercase text-center">Get in touch</h1>
       <p className="body2 text-center">
         Get in touch through your country’s telegram groups or write to us!
       </p>
