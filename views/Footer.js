@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import SocialIcons from "../components/SocialIcons";
 
@@ -12,7 +11,7 @@ export default function Footer() {
               className="position-relative mx-auto mx-sm-0"
               style={{ width: "min(100%,89px)", aspectRatio: "89/47" }}
             >
-              <Image layout="fill" src="/logo.svg" alt="artists4web3 logo" />
+              <img src="/logo.svg" alt="artists4web3 logo" />
             </div>
           </div>
           <div className="d-flex align-items-center justify-content-center justify-content-sm-end justify-content-lg-start my-3 my-lg-0">
@@ -29,11 +28,7 @@ export default function Footer() {
               className="position-relative"
               style={{ width: "min(98px,100%)", aspectRatio: "49/20" }}
             >
-              <Image
-                layout="fill"
-                src="/mantleLabs-Logo.svg"
-                alt="MantleLabs Logo"
-              />
+              <img src="/mantleLabs-Logo.svg" alt="MantleLabs Logo" />
             </div>
           </div>
         </div>

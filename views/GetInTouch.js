@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import SocialIcons from "../components/SocialIcons";
 
@@ -38,7 +37,7 @@ export default function GetInTouch() {
                 className="position-relative rounded-circle"
                 style={{ width: "80px", aspectRatio: "1/1" }}
               >
-                <Image layout="fill" src={`/touch/${group.flag}`} />
+                <img src={`/touch/${group.flag}`} />
               </div>
               <div className="d-flex flex-column align-items-start">
                 <h3 className="h3 text-uppercase">{group.name}</h3>

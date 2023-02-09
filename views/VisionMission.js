@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 export default function VisionMission() {
@@ -31,11 +30,7 @@ export default function VisionMission() {
                 className="position-relative mx-auto mb-5"
                 style={{ width: "min(166px, 90%)", aspectRatio: "166/160" }}
               >
-                <Image
-                  layout="fill"
-                  src={`/vision/${vision.icon}`}
-                  alt={vision.content}
-                />
+                <img src={`/vision/${vision.icon}`} alt={vision.content} />
               </div>
               <p className="text-uppercase text-center body2 text-primary">
                 {vision.content}
