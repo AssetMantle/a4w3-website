@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import SocialIcons from "../components/SocialIcons";
 
@@ -9,11 +8,7 @@ export default function Hero() {
         className="position-relative"
         style={{ aspectRatio: "725/384", width: "min(725px, 90%)" }}
       >
-        <Image
-          layout="fill"
-          src="/hero/hero-logo.svg"
-          alt="Artists4web3 logo"
-        />
+        <img src="/hero/hero-logo.svg" alt="Artists4web3 logo" />
       </div>
       <div className="d-flex align-items-center justify-content-center flex-wrap bg-translucent p-3 gap-3 w-100 mt-5">
         <a
