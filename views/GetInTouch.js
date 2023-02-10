@@ -22,7 +22,7 @@ export default function GetInTouch() {
   return (
     <section className="container-xl py-5 my-5 px-3">
       <h1 className="h1 text-uppercase text-center">Get in touch</h1>
-      <p className="body2 text-center">
+      <p className="body1 text-center">
         Get in touch through your country’s telegram groups or write to us!
       </p>
       <SocialIcons />
@@ -35,9 +35,22 @@ export default function GetInTouch() {
             <div className="d-flex gap-4 align-items-center">
               <div
                 className="position-relative rounded-circle"
-                style={{ width: "80px", aspectRatio: "1/1" }}
+                style={{
+                  width: "80px",
+                  aspectRatio: "1/1",
+                  overflow: "hidden",
+                }}
               >
-                <img src={`/touch/${group.flag}`} />
+                <img
+                  src={`/touch/${group.flag}`}
+                  alt={`${group.name} flag`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                  }}
+                />
               </div>
               <div className="d-flex flex-column align-items-start">
                 <h3 className="h3 text-uppercase">{group.name}</h3>
