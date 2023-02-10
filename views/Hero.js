@@ -6,9 +6,22 @@ export default function Hero() {
     <section className="d-flex flex-column align-items-center justify-content-center aw-am-hero py-3">
       <div
         className="position-relative"
-        style={{ aspectRatio: "725/384", width: "min(725px, 90%)" }}
+        style={{
+          aspectRatio: "725/384",
+          width: "min(725px, 90%)",
+          overflow: "hidden",
+        }}
       >
-        <img src="/hero/hero-logo.svg" alt="Artists4web3 logo" />
+        <img
+          src="/hero/hero-logo.svg"
+          alt="Artists4web3 logo"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
       </div>
       <div className="d-flex align-items-center justify-content-center flex-wrap bg-translucent p-3 gap-3 w-100 mt-5">
         <a

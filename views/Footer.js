@@ -9,9 +9,22 @@ export default function Footer() {
           <div className="d-flex  my-3 my-lg-0">
             <div
               className="position-relative mx-auto mx-sm-0"
-              style={{ width: "min(100%,89px)", aspectRatio: "89/47" }}
+              style={{
+                width: "min(100%,89px)",
+                aspectRatio: "89/47",
+                overflow: "hidden",
+              }}
             >
-              <img src="/logo.svg" alt="artists4web3 logo" />
+              <img
+                src="/logo.svg"
+                alt="artists4web3 logo"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+              />
             </div>
           </div>
           <div className="d-flex align-items-center justify-content-center justify-content-sm-end justify-content-lg-start my-3 my-lg-0">
@@ -26,9 +39,22 @@ export default function Footer() {
             <p className="caption2 my-auto ms-0 ms-sm-3">An Initiative by </p>
             <div
               className="position-relative"
-              style={{ width: "min(98px,100%)", aspectRatio: "49/20" }}
+              style={{
+                width: "min(98px,100%)",
+                aspectRatio: "49/20",
+                overflow: "hidden",
+              }}
             >
-              <img src="/mantleLabs-Logo.svg" alt="MantleLabs Logo" />
+              <img
+                src="/mantleLabs-Logo.svg"
+                alt="MantleLabs Logo"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+              />
             </div>
           </div>
         </div>
