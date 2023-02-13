@@ -109,6 +109,9 @@ body {
     padding-bottom: 80px !important;
   }
 }
+.container-full {
+  width: min(1440px, 100%);
+}
 // text sizes
 @mixin fontRoot($weight, $size, $fontFamily: $fontPrimary) {
   font-family: $fontFamily;
@@ -141,11 +144,11 @@ body {
 //   @include fontRoot(700, 1.8rem);
 // }
 .subtitle1 {
-  @include fontRoot(200, 1.125rem);
+  @include fontRoot(200, 2rem);
   font-feature-settings: "liga" off;
 }
 .subtitle2 {
-  @include fontRoot(200, 0.875rem);
+  @include fontRoot(200, 1.7rem);
 }
 .body1 {
   @include fontRoot(300, 1.375rem);
