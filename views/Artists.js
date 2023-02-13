@@ -1,6 +1,7 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import Section from "../components/Section";
 
 export default function Artists() {
   const ARTISTS = [
@@ -38,15 +39,12 @@ export default function Artists() {
     },
   ];
   return (
-    <section className="container-xxl py-5 my-5 px-3">
-      <h1 className="h1 text-uppercase text-center">The artists</h1>
-      <p
-        className="body1 text-center mx-auto my-3"
-        style={{ maxWidth: "880px" }}
-      >
-        Glimpse through the vivid, soulful stories of artists across this
-        community, their triumphs and travails
-      </p>
+    <Section
+      title="The artists"
+      subTitle="Glimpse through the vivid, soulful stories of artists across this
+        community, their triumphs and travails"
+      fullW={true}
+    >
       <div className="pt-4">
         <Splide
           options={{
@@ -134,6 +132,6 @@ export default function Artists() {
           )}
         </Splide>
       </div>
-    </section>
+    </Section>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Section from "../components/Section";
 import SocialIcons from "../components/SocialIcons";
 
 export default function GetInTouch() {
@@ -20,11 +21,13 @@ export default function GetInTouch() {
     },
   ];
   return (
-    <section className="container-xl py-5 my-5 px-3">
-      <h1 className="h1 text-uppercase text-center">Get in touch</h1>
-      <p className="body1 text-center">
-        Get in touch through your country’s telegram groups or write to us!
-      </p>
+    <Section
+      title={"Get in touch"}
+      subTitle={
+        "Get in touch through your country’s telegram groups or write to us!"
+      }
+    >
+      <div className="pt-3"></div>
       <SocialIcons />
       <div
         className="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-between gap-3 mt-5 pt-4 mx-auto"
@@ -67,6 +70,6 @@ export default function GetInTouch() {
           ))
         )}
       </div>
-    </section>
+    </Section>
   );
 }

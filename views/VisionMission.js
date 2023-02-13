@@ -1,4 +1,5 @@
 import React from "react";
+import Section from "../components/Section";
 
 export default function VisionMission() {
   const visions = [
@@ -12,8 +13,7 @@ export default function VisionMission() {
     },
   ];
   return (
-    <section className="container-xl py-5 my-5 px-3">
-      <h1 className="h1 text-uppercase text-center">Vision</h1>
+    <Section title={"Vision"}>
       <div className="row  mt-5 pt-4">
         <div className="col-12 col-sm-5 d-flex flex-column gap-4 justify-content-center mb-4 mb-sm-0 pb-5 pb-sm-0">
           <p
@@ -58,6 +58,6 @@ export default function VisionMission() {
           )}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
