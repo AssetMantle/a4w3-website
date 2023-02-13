@@ -17,7 +17,7 @@ export default function About() {
           </div>
         </Col>
         <Col sm={5} className="d-flex flex-column justify-content-center px-4">
-          <h1 className="text-uppercase h1 pb-2 pb-sm-4 pt-3 pt-sm-0">
+          <h1 className="text-capitalize h1 pb-2 pb-sm-4 pt-3 pt-sm-0">
             About Us
           </h1>
           <p className="body1 pb-3">
