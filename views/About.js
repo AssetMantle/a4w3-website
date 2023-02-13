@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import Section from "../components/Section";
 
 export default function About() {
   return (
-    <section className="container-xl py-6 my-5 px-3">
+    <Section>
       <Row gap={4}>
         <Col sm={7} className="d-flex flex-column justify-content-center px-4">
           <div className="position-relative w-100 rounded-4">
@@ -34,6 +35,6 @@ export default function About() {
           </p>
         </Col>
       </Row>
-    </section>
+    </Section>
   );
 }

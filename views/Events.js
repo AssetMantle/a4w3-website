@@ -1,5 +1,6 @@
 import React from "react";
 import Event from "../components/Event";
+import Section from "../components/Section";
 
 export default function Events() {
   const EVENTS = [
@@ -23,11 +24,10 @@ export default function Events() {
     },
   ];
   return (
-    <section className="container-xl py-5 my-5 px-3">
-      <h1 className="h1 text-uppercase text-center">Events</h1>
+    <Section title={"Events"}>
       <div className="d-flex flex-column align-items-center justify-content-center gap-3 mt-5 pt-5">
         {React.Children.toArray(EVENTS.map((event) => <Event data={event} />))}
       </div>
-    </section>
+    </Section>
   );
 }

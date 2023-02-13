@@ -1,6 +1,7 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import Section from "../components/Section";
 
 export default function Gallery() {
   const Images = [
@@ -18,11 +19,7 @@ export default function Gallery() {
     },
   ];
   return (
-    <section
-      className="py-5 my-5 mx-auto"
-      style={{ width: "min(1440px,100%)" }}
-    >
-      <h1 className="h1 px-3 text-uppercase text-center pb-4">GaLLERY</h1>
+    <Section title={"GALLERY"} fullW={true} px={"0"}>
       <div className="pt-5">
         <Splide
           options={{
@@ -64,6 +61,6 @@ export default function Gallery() {
         </Splide>
         <div className="position-relative"></div>
       </div>
-    </section>
+    </Section>
   );
 }
