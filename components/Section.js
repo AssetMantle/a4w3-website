@@ -15,7 +15,7 @@ export default function Section({
       } py-5 my-5 px-${px}`}
     >
       {title && (
-        <h1 className="h1 px-3 text-uppercase text-center mb-3">{title}</h1>
+        <h1 className="h1 px-3 text-capitalize text-center mb-3">{title}</h1>
       )}
       {subTitle && (
         <p
