@@ -17,13 +17,13 @@ export default function VisionMission() {
       <div className="row  mt-5 pt-4">
         <div className="col-12 col-sm-5 d-flex flex-column gap-4 justify-content-center mb-4 mb-sm-0 pb-5 pb-sm-0">
           <p
-            className="h2 m-0"
+            className="h4 m-0"
             style={{ maxWidth: "496px", fontWeight: "300" }}
           >
             Artist4Web3 is meaning to DEMOCRATIZE ART.
           </p>
           <p
-            className="h2 m-0"
+            className="h4 m-0"
             style={{ maxWidth: "496px", fontWeight: "300" }}
           >
             Art should have no border. With Web3, artists can leverage global
