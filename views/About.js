@@ -5,8 +5,12 @@ import Section from "../components/Section";
 export default function About() {
   return (
     <Section>
-      <Row gap={4}>
-        <Col sm={7} className="d-flex flex-column justify-content-center px-4">
+      <Row>
+        <Col
+          xs={12}
+          xl={7}
+          className="d-flex flex-column justify-content-center px-4 py-2"
+        >
           <div className="position-relative w-100 rounded-4">
             <img
               className="rounded-4"
@@ -16,7 +20,11 @@ export default function About() {
             />
           </div>
         </Col>
-        <Col sm={5} className="d-flex flex-column justify-content-center px-4">
+        <Col
+          xs={12}
+          xl={5}
+          className="d-flex flex-column justify-content-center px-4 py-2"
+        >
           <h1 className="text-capitalize h1 pb-2 pb-sm-4 pt-3 pt-sm-0">
             About Us
           </h1>
