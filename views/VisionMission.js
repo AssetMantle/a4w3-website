@@ -5,10 +5,12 @@ export default function VisionMission() {
   const visions = [
     {
       icon: "vision1.svg",
+      width: 151,
       content: "Leveraging global audiences",
     },
     {
       icon: "vision2.svg",
+      width: 141,
       content: "Censorship-resistant content",
     },
   ];
@@ -37,7 +39,7 @@ export default function VisionMission() {
                 <div
                   className="position-relative mx-auto mb-5"
                   style={{
-                    width: "min(145px, 90%)",
+                    width: `min(${vision.width}px, 90%)`,
                     aspectRatio: "166/160",
                   }}
                 >
