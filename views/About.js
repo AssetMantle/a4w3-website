@@ -25,10 +25,8 @@ export default function About() {
           xl={5}
           className="d-flex flex-column justify-content-center px-4 py-2"
         >
-          <h1 className="text-capitalize h1 pb-2 pb-sm-4 pt-3 pt-sm-0">
-            About Us
-          </h1>
-          <p className="body1 pb-3">
+          <h1 className="text-capitalize h1 pb-2 pt-3 pt-sm-0">About Us</h1>
+          <p className="body1 pb-2">
             Art is something we do, a verb. Art is an expression of our
             thoughts, emotions, intuitions, and desires, but it is even more
             personal than that: it is about sharing the way we experience the
