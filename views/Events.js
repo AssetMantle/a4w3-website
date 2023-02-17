@@ -8,8 +8,7 @@ export default function Events() {
       date: "21-11-2022",
       name: "A4W3 Meetup",
       place: "Austin, Texas, USA",
-      description:
-        "Event Description. AssetMantle suite of products creates a distributed NFT Economy where users can create not only NFT.",
+      description: "",
       link: "",
       completed: true,
     },
@@ -17,8 +16,7 @@ export default function Events() {
       date: "19-10-2022",
       name: "A4W3 Meetup",
       place: "Austin, Texas, USA",
-      description:
-        "Event Description. AssetMantle suite of products creates a distributed NFT Economy where users can create not only NFT.",
+      description: "",
       link: "",
       completed: true,
     },
@@ -26,8 +24,7 @@ export default function Events() {
       date: "10-10-2022",
       name: "A4W3 Meetup",
       place: "Bintana art gallery, Davos, PH",
-      description:
-        "Event Description. AssetMantle suite of products creates a distributed NFT Economy where users can create not only NFT.",
+      description: "",
       link: "",
       completed: true,
     },
