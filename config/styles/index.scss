@@ -141,7 +141,13 @@ body {
   @include fontRoot(700, 2rem);
 }
 .h4 {
-  @include fontRoot(700, 1.8rem);
+  @include fontRoot(700, 1.7rem);
+}
+.h5 {
+  @include fontRoot(400, 1.5rem);
+}
+.h6 {
+  @include fontRoot(500, 1.25rem);
 }
 .subtitle1 {
   @include fontRoot(200, 2rem);
@@ -154,7 +160,7 @@ body {
   @include fontRoot(300, 1.4rem);
 }
 .body2 {
-  @include fontRoot(300, 1.2rem);
+  @include fontRoot(200, 1.2rem);
 }
 .caption {
   @include fontRoot(300, 1rem);
