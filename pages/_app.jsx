@@ -8,19 +8,22 @@ function AppSite({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="A template for Landing Site" />
-        <title>Airtists4web3</title>
+        <meta
+          name="description"
+          content="Art is something we do, a verb. Art is an expression of our thoughts, emotions, intuitions, and desires, but it is even more personal than that: it is about sharing the way we experience the world, which for many is an extension of the personality."
+        />
+        <title>Artists4web3</title>
         {/* PWA primary color */}
         <meta name="theme-color" content="#111111" />
         {/* open graphs start */}
-        <meta property="og:site_name" content="Template Site" />
-        <meta property="og:url" content="https://example.com" />
-        <meta property="al:web:url" content="https://example.com" />
-        <meta property="og:image" content="/socialTagCard.png" />
-        <meta property="og:title" content="TemplateSite" />
+        <meta property="og:site_name" content="Artists4web3" />
+        <meta property="og:url" content="https://artists4web3.org/" />
+        <meta property="al:web:url" content="https://artists4web3.org/" />
+        <meta property="og:image" content="/og.png" />
+        <meta property="og:title" content="Artists4web3" />
         <meta
           property="og:description"
-          content="This is a template site built in NextJS with Static HTML Export"
+          content="Art is something we do, a verb. Art is an expression of our thoughts, emotions, intuitions, and desires, but it is even more personal than that: it is about sharing the way we experience the world, which for many is an extension of the personality."
         />
         {/* open graphs end */}
       </Head>
