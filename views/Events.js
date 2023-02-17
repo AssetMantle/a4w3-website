@@ -5,18 +5,27 @@ import Section from "../components/Section";
 export default function Events() {
   const EVENTS = [
     {
-      date: "31-12-2022",
-      name: "Event Name",
-      place: "Event Place",
+      date: "21-11-2022",
+      name: "A4W3 Meetup",
+      place: "Austin, Texas, USA",
       description:
         "Event Description. AssetMantle suite of products creates a distributed NFT Economy where users can create not only NFT.",
       link: "",
       completed: true,
     },
     {
-      date: "31-12-2022",
-      name: "Event Name",
-      place: "Event Place",
+      date: "19-10-2022",
+      name: "A4W3 Meetup",
+      place: "Austin, Texas, USA",
+      description:
+        "Event Description. AssetMantle suite of products creates a distributed NFT Economy where users can create not only NFT.",
+      link: "",
+      completed: true,
+    },
+    {
+      date: "10-10-2022",
+      name: "A4W3 Meetup",
+      place: "Bintana art gallery, Davos, PH",
       description:
         "Event Description. AssetMantle suite of products creates a distributed NFT Economy where users can create not only NFT.",
       link: "",
