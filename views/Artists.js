@@ -6,35 +6,32 @@ import Section from "../components/Section";
 export default function Artists() {
   const ARTISTS = [
     {
-      art: "https://images.unsplash.com/photo-1499228388171-1b10538a4f73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Artist’s Name",
-      handle: "@artistshandle",
-      url: "",
+      art: "/artists/amydienerpaintings_art.png",
+      avatar: "/artists/amydienerpaintings.png",
+      name: "Amy Diener",
+      handle: "@amydienerpaintings",
+      url: "https://www.instagram.com/p/Ck3Y8zyvghl/",
     },
     {
       art: "https://images.unsplash.com/photo-1628359355624-855775b5c9c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Artist’s Name",
+      avatar: "/artists/dimitri.png",
+      name: "Dimitri",
       handle: "@artistshandle",
-      url: "",
+      url: "https://www.instagram.com/p/ClBTsuavxio/",
     },
     {
-      art: "https://images.unsplash.com/photo-1504685723432-f3f005135e75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Artist’s Name",
-      handle: "@artistshandle",
-      url: "",
+      art: "/artists/sid_eight_art.png",
+      avatar: "/artists/sid_eight.png",
+      name: "Siddharth Uniyal",
+      handle: "@sid_eight",
+      url: "https://www.instagram.com/p/CkMYVydB4Ob/",
     },
     {
-      art: "https://images.unsplash.com/photo-1618578353017-74b491b3ece9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      art: "https://images.unsplash.com/photo-1499228388171-1b10538a4f73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      name: "Artist’s Name",
-      handle: "@artistshandle",
+      name: "This could be you!",
+      handle: "@you&A4W3",
       url: "",
     },
   ];
@@ -75,7 +72,9 @@ export default function Artists() {
                   style={{ cursor: "pointer" }}
                   role="button"
                   tabIndex="0"
-                  onClick={() => window.open(artist.url, "_blank")}
+                  onClick={() =>
+                    artist.url && window.open(artist.url, "_blank")
+                  }
                 >
                   <div
                     className="d-flex flex-column gap-4 p-4 rounded-4 mx-auto bg-gray-700"
