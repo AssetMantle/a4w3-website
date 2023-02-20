@@ -30,10 +30,10 @@ export default function Event({ data }) {
               : Number(EDateA[0])}
           </h1>
           <div className="d-flex align-items-center justify-content-center flex-column gap-1">
-            <p className="caption m-0 text-primary">
+            <p className="caption m-0 text-primary" style={{ fontWeight: 500 }}>
               {EDateA && EDateA[1] && MONTHs[Number(EDateA[1])]}
             </p>
-            <p className="caption m-0 text-primary">
+            <p className="caption m-0 text-primary" style={{ fontWeight: 500 }}>
               {EDateA && EDateA[2] && EDateA[2]}
             </p>
           </div>
