@@ -19,7 +19,7 @@ export default function Gallery() {
     },
   ];
   return (
-    <Section title={"GALLERY"} fullW={true} px={"0"}>
+    <Section title={"Gallery"} fullW={true} px={"0"}>
       <div className="pt-5">
         <Splide
           options={{
