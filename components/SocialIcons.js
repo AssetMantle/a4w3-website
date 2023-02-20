@@ -9,7 +9,7 @@ import {
 export default function SocialIcons() {
   const Socials = [
     {
-      link: "https://twitter.com/AssetMantle",
+      link: "https://twitter.com/Artist_4_web3",
       font: "body1",
       icon: <TbBrandTwitter />,
     },
@@ -19,7 +19,7 @@ export default function SocialIcons() {
       icon: <TbMail />,
     },
     {
-      link: "https://t.me/assetmantlechat",
+      link: "https://t.me/Artist4Web3",
       font: "body1",
       icon: <TbBrandTelegram />,
     },
