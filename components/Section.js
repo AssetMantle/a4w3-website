@@ -7,6 +7,7 @@ export default function Section({
   subTitle,
   children,
   px = 3,
+  subtitleWidth = 880,
 }) {
   return (
     <section
@@ -20,7 +21,7 @@ export default function Section({
       {subTitle && (
         <p
           className="subtitle1 text-center mx-auto my-3"
-          style={{ maxWidth: "880px" }}
+          style={{ maxWidth: `${subtitleWidth}px` }}
         >
           {subTitle}
         </p>
