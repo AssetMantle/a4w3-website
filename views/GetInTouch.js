@@ -26,6 +26,7 @@ export default function GetInTouch() {
       subTitle={
         "Get in touch through your country’s telegram groups or write to us!"
       }
+      subtitleWidth={500}
     >
       <div className="pt-3"></div>
       <SocialIcons />
