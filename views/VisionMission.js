@@ -4,12 +4,12 @@ import Section from "../components/Section";
 export default function VisionMission() {
   const visions = [
     {
-      icon: "vision1.svg",
+      icon: "vision1.png",
       width: 151,
       content: "Leveraging global audiences",
     },
     {
-      icon: "vision2.svg",
+      icon: "vision2.png",
       width: 141,
       content: "Censorship-resistant content",
     },
