@@ -13,7 +13,7 @@ export default function Artists() {
       url: "https://www.instagram.com/p/Ck3Y8zyvghl/",
     },
     {
-      art: "https://images.unsplash.com/photo-1628359355624-855775b5c9c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      art: "/artists/dimitri_art.png",
       avatar: "/artists/dimitri.png",
       name: "Dimitri",
       handle: "@artistshandle",
