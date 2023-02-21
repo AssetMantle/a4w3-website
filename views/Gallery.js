@@ -19,7 +19,15 @@ export default function Gallery() {
     },
   ];
   return (
-    <Section title={"Gallery"} fullW={true} px={"0"}>
+    <Section
+      title={"Gallery"}
+      subTitle={
+        "A showcase of snapshots witnessing the footprint of the Artists4Web3, where the stakeholders where at pertinent or associative capacity "
+      }
+      subtitleWidth={980}
+      fullW={true}
+      px={"0"}
+    >
       <div className="pt-5">
         <Splide
           options={{

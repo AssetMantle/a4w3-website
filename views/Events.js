@@ -30,7 +30,10 @@ export default function Events() {
     },
   ];
   return (
-    <Section title={"Events"}>
+    <Section
+      title={"Events"}
+      subTitle={`Find the historical, and future planned timeline showcasing all the events encompassing the artists of A4W3`}
+    >
       <div className="d-flex flex-column align-items-center justify-content-center gap-3 mt-5 pt-5">
         {React.Children.toArray(EVENTS.map((event) => <Event data={event} />))}
       </div>
