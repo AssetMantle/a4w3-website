@@ -22,7 +22,7 @@ export default function Gallery() {
     <Section
       title={"Gallery"}
       subTitle={
-        "A showcase of snapshots witnessing the footprint of the Artists4Web3, where the stakeholders where at pertinent or associative capacity "
+        "A showcase of snapshots witnessing the footprint of the Artists4Web3, where the stakeholders were at pertinent or associative capacity "
       }
       subtitleWidth={980}
       fullW={true}
