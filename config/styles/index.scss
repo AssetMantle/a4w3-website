@@ -395,6 +395,9 @@ a:hover {
 .text-success {
   color: $success;
 }
+.border-color-dark {
+  border-color: $dark-400;
+}
 .border-color-light_gray {
   border-color: $gray-100;
 }
@@ -711,13 +714,21 @@ tbody {
   aspect-ratio: 16/10;
   background-image: url("/hero/herobg.png");
   background-position: center;
-  background-size: cover;
+  background-size: 90%;
   background-repeat: no-repeat;
   @media (max-width: 768px) {
-    aspect-ratio: 1/1;
+    // aspect-ratio: 1/1;
+    height: 100dvh;
+    aspect-ratio: auto;
+    background-size: 145%;
   }
   @media (max-width: 576px) {
-    aspect-ratio: 4/7;
+    // aspect-ratio: 4/7;
+    height: 100dvh;
+    aspect-ratio: auto;
+    background-size: 145%;
+    background-position: top;
+    justify-content: end !important;
   }
 }
 
