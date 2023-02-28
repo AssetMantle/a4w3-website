@@ -4,15 +4,15 @@ import SocialIcons from "../components/SocialIcons";
 export default function Hero() {
   return (
     <section className="d-flex flex-column align-items-center justify-content-center aw-am-hero py-3">
-      <div
+      {/* <div
         className="position-relative"
         style={{
           aspectRatio: "725/384",
-          width: "min(725px, 90%)",
+          width: "min(625px, 90%)",
           overflow: "hidden",
         }}
-      >
-        <img
+      > */}
+      {/* <img
           src="/hero/hero-logo.svg"
           alt="Artists4web3 logo"
           style={{
@@ -21,8 +21,8 @@ export default function Hero() {
             objectFit: "cover",
             objectPosition: "center",
           }}
-        />
-      </div>
+        /> */}
+      {/* </div> */}
       <div className="d-flex align-items-center justify-content-center flex-wrap bg-translucent p-3 gap-3 w-100 mt-5">
         <a
           href="https://www.notion.so/amcontributor/AssetMantle-s-Contributor-Program-422df49c031f4661a4bc9f31197af8f4"
@@ -36,7 +36,7 @@ export default function Hero() {
           href="https://t.me/Artist4Web3"
           target="_blank"
           rel="noopener noreferrer"
-          className="button-secondary d-flex align-items-center gap-2 py-2 px-3 caption"
+          className="button-primary d-flex align-items-center gap-2 py-2 px-3 caption"
         >
           Join Country group <i className="bi bi-chevron-right"></i>
         </a>
